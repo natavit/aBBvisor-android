@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="estimote_app_id" templateMergeStrategy="preserve" translatable="false">
+
+    </string>
+
+    <string name="estimote_app_token" templateMergeStrategy="preserve" translatable="false">
+
+    </string>
+</resources>

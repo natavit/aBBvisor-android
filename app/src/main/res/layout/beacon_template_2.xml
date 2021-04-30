@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--android:background="#62549E"-->
+
+        <!--<com.synnapps.carouselview.CarouselView-->
+            <!--android:id="@+id/carousel_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="256dp"-->
+            <!--app:fillColor="#FFFFFFFF"-->
+            <!--app:pageColor="#00000000"-->
+            <!--app:radius="4dp"-->
+            <!--app:slideInterval="3000"-->
+            <!--app:strokeColor="#FFFFFFFF"-->
+            <!--app:strokeWidth="1dp" />-->
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/pv_content"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_padding_16dp"
+                android:layout_marginStart="@dimen/margin_padding_16dp"
+                android:layout_marginTop="@dimen/margin_padding_16dp"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:text="@string/text_beacon_title"
+                android:textColor="@color/theme_text_primary_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_opening_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_padding_16dp"
+                android:layout_marginStart="@dimen/margin_padding_16dp"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:text="@string/text_beacon_opening_time" />
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:layout_marginEnd="@dimen/margin_padding_16dp"
+                android:layout_marginStart="@dimen/margin_padding_16dp"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:text="@string/text_beacon_tel" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_padding_16dp"
+                android:layout_marginStart="@dimen/margin_padding_16dp"
+                android:layout_marginBottom="@dimen/margin_bottom_template_2">
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="@string/text_beacon_content" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

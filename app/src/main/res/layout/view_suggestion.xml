@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:paddingEnd="@dimen/margin_padding_16dp"
+    android:paddingStart="@dimen/margin_padding_16dp"
+    android:paddingTop="@dimen/margin_padding_16dp">
+
+    <LinearLayout
+        android:id="@+id/place_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_place_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_place_name"
+                android:textColor="@color/grey_900" />
+
+            <TextView
+                android:id="@+id/tv_place_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/text_place_address"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@+id/place_info"
+        android:layout_marginTop="@dimen/margin_padding_16dp"
+        android:layout_marginEnd="@dimen/margin_padding_4dp"
+        android:layout_marginStart="@dimen/margin_padding_32dp"
+        android:background="@color/divider" />
+
+</RelativeLayout>

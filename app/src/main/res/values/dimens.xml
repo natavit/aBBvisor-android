@@ -1,0 +1,66 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- standard metrics -->
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+
+    <dimen name="margin_padding_4dp">4dp</dimen>
+    <dimen name="margin_padding_8dp">8dp</dimen>
+    <dimen name="margin_padding_16dp">16dp</dimen>
+    <dimen name="margin_padding_24dp">24dp</dimen>
+    <dimen name="margin_padding_32dp">32dp</dimen>
+    <dimen name="margin_padding_48dp">48dp</dimen>
+    <dimen name="margin_padding_72dp">72dp</dimen>
+
+    <dimen name="touch_raise">6dp</dimen>
+
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_1_minus_8dp">8dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+
+    <dimen name="card_corner_radius_0dp">0dp</dimen>
+    <dimen name="card_corner_radius_2dp">2dp</dimen>
+    <dimen name="card_corner_radius_4dp">4dp</dimen>
+    <dimen name="card_corner_radius_8dp">8dp</dimen>
+    <dimen name="card_corner_radius_16dp">16dp</dimen>
+
+    <dimen name="card_elevation_0dp">0dp</dimen>
+    <dimen name="card_elevation_1dp">1dp</dimen>
+    <dimen name="card_elevation_2dp">2dp</dimen>
+    <dimen name="card_elevation_4dp">4dp</dimen>
+    <dimen name="card_elevation_8dp">8dp</dimen>
+    <dimen name="card_elevation_16dp">16dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="fab_beacon_margin_right">16dp</dimen>
+    <dimen name="fab_beacon_margin_bottom">84dp</dimen>
+    <dimen name="fab_location_margin_right">16dp</dimen>
+    <dimen name="fab_location_margin_bottom">164dp</dimen>
+
+    <dimen name="fab_elevation_0dp">0dp</dimen>
+    <dimen name="fab_elevation_small">4dp</dimen>
+    <dimen name="fab_elevation_normal">8dp</dimen>
+
+    <dimen name="text_description">10sp</dimen>
+    <dimen name="text_description_2">12sp</dimen>
+
+    <dimen name="item_offset">16dp</dimen>
+    <dimen name="bottom_sheet_height">420dp</dimen>
+    <dimen name="fav_places_height">250dp</dimen>
+    <dimen name="nearby_peek_height">64dp</dimen>
+    <dimen name="beacon_activity_peek_height">0dp</dimen>
+    <dimen name="beacon_template_3_image_height">256dp</dimen>
+    <dimen name="beacon_activity_image_height">200dp</dimen>
+
+    <dimen name="achievement_detail_height">180dp</dimen>
+    <dimen name="margin_bottom_template_2">64dp</dimen>
+
+    <dimen name="alert_dialog_width">240dp</dimen>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.abbvisor.abbvisor.updateprofile.UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_padding_48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_age"
+                    android:textColor="@color/theme_text_primary_dark" />
+
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <io.ghyeok.stickyswitch.widget.StickySwitch
+                android:id="@+id/sticky_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:iconPadding="18dp"
+                app:iconSize="16dp"
+                app:leftIcon="@drawable/ic_gender_male"
+                app:leftText="Male"
+                app:rightIcon="@drawable/ic_gender_female"
+                app:rightText="Female"
+                app:selectedTextSize="14sp"
+                app:sliderBackgroundColor="@color/theme_primary"
+                app:switchColor="@color/theme_accent_2"
+                app:textColor="@color/theme_text_primary_dark"
+                app:textSize="12sp" />
+
+        </LinearLayout>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_padding_16dp"
+            app:fb_borderWidth="2dp"
+            app:fb_defaultColor="@color/theme_primary"
+            app:fb_focusColor="@color/theme_primary_dark"
+            app:fb_radius="24dp"
+            app:fb_text="@string/action_next"
+            app:fb_textSize="14sp" />
+
+    </RelativeLayout>
+</layout>

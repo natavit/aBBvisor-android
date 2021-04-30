@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_primary">
+
+            <!--<com.synnapps.carouselview.CarouselView-->
+            <!--android:id="@+id/welcome_image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:fillColor="@color/transparent"-->
+            <!--app:strokeColor="@color/transparent"-->
+            <!--app:slideInterval="5000" />-->
+
+            <ImageView
+                android:id="@+id/welcome_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/text_welcome_image" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/welcome_image_overlay" />
+
+            <TextView
+                android:id="@+id/tv_app_title"
+                fontPath="fonts/Aller-Display.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_padding_32dp"
+                android:text="@string/app_title"
+                android:textColor="@android:color/white"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/tv_app_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_app_title"
+                android:layout_centerHorizontal="true"
+                android:text="@string/app_explain"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:layout_marginEnd="@dimen/margin_padding_32dp"
+                android:layout_marginStart="@dimen/margin_padding_32dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:hint="@string/text_hint_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/app_body_text_2_inverse"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:hint="@string/text_hint_password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/app_body_text_2_inverse"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:orientation="horizontal">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_signin"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        app:fb_borderColor="@android:color/white"
+                        app:fb_borderWidth="2dp"
+                        app:fb_defaultColor="@color/transparent"
+                        app:fb_focusColor="@android:color/white"
+                        app:fb_radius="24dp"
+                        app:fb_text="@string/action_sign_in"
+                        app:fb_textSize="14sp" />
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_register"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:layout_weight="1"
+                        app:fb_defaultColor="@color/theme_primary"
+                        app:fb_focusColor="@color/button_pressed"
+                        app:fb_radius="24dp"
+                        app:fb_text="@string/action_register"
+                        app:fb_textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:text="@string/text_or"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_facebook"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        app:fb_defaultColor="@android:color/white"
+                        app:fb_focusColor="@color/button_pressed"
+                        app:fb_fontIconResource="&#xf09a;"
+                        app:fb_fontIconSize="24sp"
+                        app:fb_iconPosition="left"
+                        app:fb_radius="24dp"
+                        app:fb_text="@string/text_facebook"
+                        app:fb_textColor="@color/app_body_text_1"
+                        app:fb_textSize="14sp" />
+
+                    <!--app:fb_defaultColor="@color/com_facebook_button_background_color"-->
+                    <!--app:fb_focusColor="@color/com_facebook_button_background_color_focused"-->
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_google"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:layout_weight="1"
+                        app:fb_defaultColor="@android:color/white"
+                        app:fb_focusColor="@color/button_pressed"
+                        app:fb_fontIconResource="&#xf1a0;"
+                        app:fb_fontIconSize="24sp"
+                        app:fb_iconPosition="left"
+                        app:fb_radius="24dp"
+                        app:fb_text="@string/text_google"
+                        app:fb_textColor="@color/app_body_text_1"
+                        app:fb_textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+</layout>

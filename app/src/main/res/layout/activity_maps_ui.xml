@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/search_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_16dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="@dimen/card_corner_radius_0dp"
+            app:cardElevation="@dimen/card_elevation_2dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <TextView
+                    android:id="@+id/search_bar_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_padding_16dp"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_search_hint"
+                    android:maxLines="@integer/search_bar_max_lines"
+                    android:textColor="@color/theme_text_secondary_dark"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Bottom Sheet -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_padding_16dp"
+            android:layout_marginStart="@dimen/margin_padding_16dp"
+            app:behavior_peekHeight="@dimen/nearby_peek_height"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="@dimen/card_corner_radius_0dp"
+            app:cardElevation="@dimen/card_elevation_1dp"
+            app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_sheet_height"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/theme_primary">
+
+                    <TextView
+                        android:id="@+id/tv_nearby_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/margin_padding_16dp"
+                        android:text="@string/text_nearby_places"
+                        android:textColor="@color/theme_text_primary_light"
+                        android:textSize="@dimen/text_description_2"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_nearby_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:src="@drawable/ic_keyboard_arrow_up_white_24dp" />
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_padding_16dp"
+                    android:indeterminate="true" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_padding_16dp"
+                    android:padding="@dimen/margin_padding_8dp"
+                    android:visibility="gone"
+                    app:fb_borderColor="@color/theme_primary"
+                    app:fb_borderWidth="2dp"
+                    app:fb_defaultColor="@color/transparent"
+                    app:fb_focusColor="@color/theme_primary"
+                    app:fb_radius="4dp"
+                    app:fb_text="@string/action_retry"
+                    app:fb_textColor="@color/theme_text_primary_dark"
+                    app:fb_textSize="14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_nearby_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_scan_beacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_beacon_margin_bottom"
+            android:src="@drawable/ic_wifi_tethering_grey_900_24dp"
+            android:tint="@color/theme_text_primary_light"
+            app:backgroundTint="@color/theme_accent_2"
+            app:elevation="@dimen/fab_elevation_normal"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/bottom_sheet"
+            app:layout_anchorGravity="center_horizontal" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="224dp"
+            android:layout_marginEnd="@dimen/fab_location_margin_right"
+            android:src="@drawable/ic_navigation_grey_900_24dp"
+            android:tint="@color/theme_text_primary_light"
+            android:visibility="gone"
+            app:backgroundTint="@color/theme_primary"
+            app:elevation="@dimen/fab_elevation_small"
+            app:fabSize="mini"
+            app:layout_anchor="@+id/bottom_sheet"
+            app:layout_anchorGravity="top|end" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_my_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_location_margin_bottom"
+            android:layout_marginEnd="@dimen/fab_location_margin_right"
+            android:src="@drawable/ic_gps_fixed_grey_900_24dp"
+            android:visibility="gone"
+            app:backgroundTint="@android:color/white"
+            app:elevation="@dimen/fab_elevation_small"
+            app:fabSize="mini"
+            app:layout_anchor="@+id/bottom_sheet"
+            app:layout_anchorGravity="top|end" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

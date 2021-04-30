@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">Abbvisor</string>
+    <string name="app_title">ABBVISOR</string>
+    <string name="app_explain">Let\'s explore attractions</string>
+
+    <string name="title_activity_login">aBBvisor</string>
+    <string name="title_activity_maps">Maps</string>
+    <string name="title_activity_beacon_scanner">Beacon Scanner</string>
+    <string name="title_activity_preferences">Select your characteristics</string>
+    <string name="title_activity_update_profile">Fill in your information</string>
+    <string name="title_activity_achievement">Achievements</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_done">Done</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_register"><u>Register</u></string>
+    <string name="action_achievements">Achievements</string>
+    <string name="action_characteristics">Characteristics</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_open_drawer">Open Menu</string>
+    <string name="action_close_drawer">Close Menu</string>
+    <string name="action_start">Start</string>
+    <string name="action_next">Next</string>
+    <string name="action_ok">OK</string>
+    <string name="actoin_share">Share</string>
+    <string name="action_view_activities">View activities</string>
+    <string name="action_hide_activities">Hide activities</string>
+
+    <string name="facebook_app_id">353279698363661</string>
+    <string name="fb_login_protocol_scheme">fb353279698363661</string>
+
+    <string name="text_facebook">Facebook</string>
+    <string name="text_google">Google</string>
+    <string name="text_default_info_title">Default Location</string>
+    <string name="text_default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="text_search_hint">Search your destination</string>
+    <string name="text_destination">DESTINATION</string>
+    <string name="text_place_name">Name</string>
+    <string name="text_place_distance">Distance</string>
+    <string name="text_place_address">Address</string>
+    <string name="text_place_contact">Contact: %1$s</string>
+    <string name="text_place_duration">Duration</string>
+    <string name="text_login_name">Name</string>
+    <string name="text_nearby_places">NEARBY PLACES</string>
+    <string name="text_nearby_activities">NEARBY ACTIVTIES</string>
+    <string name="text_activity_name">Name</string>
+    <string name="text_activity_date">Date: %1$s - %2$s</string>
+    <string name="text_activity_day">Day: %1$s</string>
+    <string name="text_activity_description">Description</string>
+    <string name="text_fav_places">Favourite Places</string>
+    <string name="text_beacon_title">TITLE</string>
+    <string name="text_beacon_opening_time">Opening time: %1$s - %2$s</string>
+    <string name="text_beacon_tel">Tel: %1$s</string>
+    <string name="text_beacon_content">Description</string>
+    <string name="text_beacon_price">Price: %1$s</string>
+    <string name="text_or">OR</string>
+    <string name="text_hint_email">Email</string>
+    <string name="text_hint_password">Password</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_welcome_image">Welcome image</string>
+    <string name="text_duration"><b>Duration:</b> %1$s</string>
+    <string name="text_select_your_gender">Select your gender</string>
+    <string name="text_age">Age:</string>
+    <string name="text_discoverd_beacon">Discovered beacons: %d</string>
+    <string name="text_looking_for_beacons">Looking for beacons…</string>
+    <string name="text_personality_type">The %1$s Traveler</string>
+
+    <!-- DistanceMatrix Scanner -->
+    <string name="permission_rationale_location">
+        Location permission is required when scanning for beacons with Nearby.
+    </string>
+    <string name="permission_denied_explanation">
+        Permission was denied, but is needed. Go to Settings.
+    </string>
+    <string name="permission_denied">
+        Permission to use Nearby denied. Cannot subscribe.
+    </string>
+
+
+    <!-- Geofence Message -->
+    <!-- Error Message -->
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="geofence_unknown_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="geofence_unknown_transition">Unknown Transition</string>
+    <string name="geofence_transition_notification_text">Let\'s explore the place</string>
+
+    <!-- Strings related to Settings -->
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_header_about">About</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_title_beacon_area">Beacon areas</string>
+    <string name="pref_title_links_open_externally">Links open externally</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_title_version">aBBvisor 1.0</string>
+    <string name="pref_summary_beacon_area">Notify when entering to beacon areas</string>
+    <string name="pref_summary_notification_ringtone">Set your notification ringtone</string>
+    <string name="pref_default_ringtone">notification_sound</string>
+
+    <string name="pref_key_notifications_beacon_area">notifications_beacon_area</string>
+    <string name="pref_key_notifications_ringtone">notifications_ringtone</string>
+    <string name="pref_key_general_links_open_externally">general_links_open_externally</string>
+
+    <!-- Preferences Selection -->
+    <string-array name="preferences">
+        <item>Adventure</item>
+        <item>Arts</item>
+        <item>Animal</item>
+        <item>Fashion</item>
+        <item>Film &amp; Media</item>
+        <item>Food &amp; Drink</item>
+        <item>History</item>
+        <item>Indoor</item>
+        <item>Music</item>
+        <item>Nature</item>
+        <item>Outdoor</item>
+        <item>Photography</item>
+        <item>Health</item>
+        <item>Sport &amp; Fitness</item>
+        <item>Science &amp; Tech</item>
+    </string-array>
+
+    <!-- Personality Selection -->
+    <!-- http://www.huffingtonpost.com/2013/12/02/personality-travel_n_4344626.html -->
+    <string-array name="personalities">
+        <item>Altruistic</item>
+        <item>Artsy</item>
+        <item>Celebratory</item>
+        <item>Chill</item>
+        <item>Classic</item>
+        <!--<item>The Compassionate Traveler</item>-->
+        <item>Competitive</item>
+        <item>Curious</item>
+        <item>Daydreaming</item>
+        <item>Extreme</item>
+        <!--<item>The Harmonious Traveler</item>-->
+        <item>Offbeat</item>
+        <item>Posh</item>
+        <item>Scholarly</item>
+        <!--<item>The Traditionalist Traveler</item>-->
+        <!--<item>The Wild Traveler</item>-->
+    </string-array>
+
+</resources>

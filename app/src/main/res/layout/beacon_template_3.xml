@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_primary"
+            android:orientation="vertical">
+            <!--android:background="#62549E"-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_padding_16dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="@dimen/card_corner_radius_4dp"
+                app:cardElevation="@dimen/card_elevation_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/pv_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/beacon_template_3_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_padding_8dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_01_title"
+                        fontPath="fonts/Aller-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:layout_marginTop="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_title"
+                        android:textColor="@color/theme_text_primary_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_01_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_price"
+                        android:textSize="14sp" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp">
+
+                        <TextView
+                            android:id="@+id/tv_01_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autoLink="web"
+                            android:text="@string/text_beacon_content"
+                            android:textSize="14sp" />
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:layout_marginEnd="@dimen/margin_padding_16dp"
+                android:layout_marginStart="@dimen/margin_padding_16dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="@dimen/card_corner_radius_4dp"
+                app:cardElevation="@dimen/card_elevation_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/pv_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/beacon_template_3_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_padding_8dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_02_title"
+                        fontPath="fonts/Aller-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:layout_marginTop="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_title"
+                        android:textColor="@color/theme_text_primary_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_02_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_price"
+                        android:textSize="14sp" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp">
+
+                        <TextView
+                            android:id="@+id/tv_02_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autoLink="web"
+                            android:text="@string/text_beacon_content"
+                            android:textSize="14sp" />
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:layout_marginEnd="@dimen/margin_padding_16dp"
+                android:layout_marginStart="@dimen/margin_padding_16dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="@dimen/card_corner_radius_4dp"
+                app:cardElevation="@dimen/card_elevation_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/pv_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/beacon_template_3_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_padding_8dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_03_title"
+                        fontPath="fonts/Aller-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:layout_marginTop="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_title"
+                        android:textColor="@color/theme_text_primary_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_03_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_price"
+                        android:textSize="14sp" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp">
+
+                        <TextView
+                            android:id="@+id/tv_03_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autoLink="web"
+                            android:text="@string/text_beacon_content"
+                            android:textSize="14sp" />
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:layout_marginEnd="@dimen/margin_padding_16dp"
+                android:layout_marginStart="@dimen/margin_padding_16dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="@dimen/card_corner_radius_4dp"
+                app:cardElevation="@dimen/card_elevation_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/pv_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/beacon_template_3_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_padding_8dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_04_title"
+                        fontPath="fonts/Aller-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:layout_marginTop="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_title"
+                        android:textColor="@color/theme_text_primary_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_04_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp"
+                        android:text="@string/text_beacon_price"
+                        android:textSize="14sp" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:layout_marginEnd="@dimen/margin_padding_16dp"
+                        android:layout_marginStart="@dimen/margin_padding_16dp">
+
+                        <TextView
+                            android:id="@+id/tv_04_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autoLink="web"
+                            android:text="@string/text_beacon_content"
+                            android:textSize="14sp" />
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

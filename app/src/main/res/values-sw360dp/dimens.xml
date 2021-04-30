@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_height">480dp</dimen>
+    <dimen name="margin_bottom_template_2">64dp</dimen>
+    <dimen name="alert_dialog_width">320dp</dimen>
+</resources>

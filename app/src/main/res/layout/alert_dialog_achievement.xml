@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/card"
+    app:cardCornerRadius="@dimen/card_corner_radius_16dp"
+    app:cardElevation="@dimen/card_elevation_1dp">
+
+    <LinearLayout
+        android:layout_width="@dimen/alert_dialog_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_8dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            fontPath="fonts/Aller-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_16dp"
+            android:text="Detail"
+            android:textColor="@color/theme_text_primary_dark" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_padding_16dp"
+            android:layout_marginStart="@dimen/margin_padding_16dp"
+            android:text="Detail" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            fontPath="fonts/Aller-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/tv_ok"
+            android:padding="@dimen/margin_padding_16dp"
+            android:text="@string/action_ok"
+            android:textColor="@color/theme_accent_2" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
